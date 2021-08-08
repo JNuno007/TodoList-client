@@ -43,6 +43,7 @@ export default class SignUp extends Component {
           const status = resp.status;
           if (status === 200) {
             this.handleToast("success", "Account created! Please sign in.");
+            this.props.handleSign(null);
           } else {
             this.handleToast("error", "Something went wrong, please try again");
           }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Container, TextField, Typography } from "@material-ui/core";
+import { Button, Container, Typography } from "@material-ui/core";
 import axios from "axios";
 import { PROJECT_REMOVE_URL, toastConfig } from "../../utils/constants";
 import { toast } from "react-toastify";
@@ -41,6 +41,7 @@ export default class DeleteForm extends Component {
           this.handleToast("success", "Project and respective tasks deleted!");
           //Send to Side Menu the new project
           this.props.getProjects();
+          this.props.deselectProject();
           this.props.modal.current.handleClose();
         } else {
           this.handleToast(

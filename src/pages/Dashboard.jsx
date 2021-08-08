@@ -62,6 +62,11 @@ class Dashboard extends Component {
     ) {
       this.getTasks();
     }
+    if(!this.props.selectedProject && this.state.tasks.length > 0){
+        this.setState({
+            tasks: []
+        })
+    }
   }
 
   handleToast = (type, message) => {

@@ -127,6 +127,10 @@ export default class SideMenu extends Component {
     this.projectModal.current.handleOpen();
   };
 
+  deselectProject = () => {
+    this.props.handleSelectedProject(null);
+  };
+
   render() {
     const { action, selectedProject } = this.state;
     return (
@@ -157,6 +161,7 @@ export default class SideMenu extends Component {
               project={selectedProject}
               modal={this.projectModal}
               getProjects={this.getProjects}
+              deselectProject={this.deselectProject}
             />
           )}
         </TransitionModal>

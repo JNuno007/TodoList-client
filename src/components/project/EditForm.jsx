@@ -3,7 +3,6 @@ import { Button, Container, TextField, Typography } from "@material-ui/core";
 import axios from "axios";
 import {
   toastConfig,
-  PROJECT_CREATE_URL,
   PROJECT_EDIT_URL,
 } from "../../utils/constants";
 import { toast } from "react-toastify";

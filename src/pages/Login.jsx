@@ -18,7 +18,7 @@ export default class Login extends Component {
   }
 
   handleSign = (e) => {
-    e.preventDefault();
+    e?.preventDefault();
     this.setState({
       isSignIn: !this.state.isSignIn,
     });

@@ -13,6 +13,7 @@ export default class Project extends Component {
   }
 
   handleSelectedProject = (selectedProject) => {
+    console.log(selectedProject);
     this.setState({
       selectedProject,
     });
