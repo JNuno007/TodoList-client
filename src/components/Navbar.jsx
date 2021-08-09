@@ -5,8 +5,6 @@ import {
   Button,
   withStyles,
 } from "@material-ui/core";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import React, { Component } from "react";
 
 const styles = (theme) => ({

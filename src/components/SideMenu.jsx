@@ -66,11 +66,9 @@ export default class SideMenu extends Component {
       })
       .then((resp) => {
         if (resp.status === 200) {
-          if (resp.data.projects.length > 0) {
-            this.setState({
-              projects: resp.data.projects,
-            });
-          }
+          this.setState({
+            projects: resp.data.projects,
+          });
         }
       })
       .catch((err) => {

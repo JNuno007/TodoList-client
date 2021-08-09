@@ -179,7 +179,6 @@ class Dashboard extends Component {
             <DeleteIcon />
           </IconButton>
           <IconButton
-            color='green'
             aria-label='remove project'
             component='span'
             onClick={() => this.finishedTask(tsk)}
@@ -212,7 +211,7 @@ class Dashboard extends Component {
     return (
       <Container>
         {this.state.tasks.length > 0 && (
-          <Grid container spacing={3} className={classes.grid}>
+          <Grid container className={classes.grid}>
             <Grid item xs={12} md={6} padding={2}>
               <Paper className={classes.paper}>
                 <strong>On Going Tasks</strong>
@@ -230,7 +229,7 @@ class Dashboard extends Component {
                 </List>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={6} spacing={2}>
+            <Grid item xs={12} md={6}>
               <Paper className={classes.paper}>
                 <strong>Finished Tasks</strong>
                 <List component='nav' aria-label='main projects'>

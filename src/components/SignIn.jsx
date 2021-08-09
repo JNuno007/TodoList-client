@@ -20,7 +20,6 @@ export default class SignIn extends Component {
   }
 
   handleToast = (type, message) => {
-    console.log("TOAS");
     if (type === "success") {
       toast.success(message, toastConfig);
     } else {
@@ -56,7 +55,6 @@ export default class SignIn extends Component {
         }
       })
       .catch((err) => {
-        console.log("ERROR");
         this.handleToast("error", err.response.data.message);
       });
   };
